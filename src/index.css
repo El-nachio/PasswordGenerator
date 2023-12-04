@@ -1,13 +1,130 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Montserrat&family=Passion+One&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Passion One", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container-password {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
+.container-password h1 {
+  text-align: center;
+}
+
+.password-display {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 3% 0 3%;
+  flex-flow: row wrap;
+  width: 40vw;
+  height: 60px;
+  border: 2px solid rgba(0, 0, 0, 0.5098039216);
+}
+.password-display span {
+  margin-left: 10px;
+}
+
+.password-display, h1 {
+  margin-top: 2rem !important;
+  border-radius: 10px;
+}
+.password-display h3, h1 h3 {
+  margin: 0;
+}
+
+.button-seccion {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: 400px;
+  width: 70vw;
+}
+
+.button-display {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 60vh;
+}
+.button-display label {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+#generator {
+  width: 50px;
+  height: 50px;
+}
+
+#numberLetters {
+  border-radius: 10px;
+  width: 30%;
+}
+
+.footer {
+  background-color: #212529;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 10px 0;
+}
+
+.social-icons li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/**********************************      media query      *******************************************/
+@media (max-width: 769px) {
+  .button-seccion {
+    height: 40vh;
+    width: 100vw;
+  }
+}
+@media (max-width: 480px) {
+  .button-display {
+    align-content: space-around;
+    width: 50vw;
+  }
+  .password-display {
+    width: 50vw;
+  }
+}/*# sourceMappingURL=index.css.map */
